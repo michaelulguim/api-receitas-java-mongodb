@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/eclipse,netbeans,intellij,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=eclipse,netbeans,intellij,visualstudiocode
+# Created by https://www.gitignore.io/api/maven,gradle,eclipse,netbeans,intellij,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=maven,gradle,eclipse,netbeans,intellij,visualstudiocode
 
 ### Eclipse ###
 .metadata
@@ -153,6 +153,18 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
 ### NetBeans ###
 **/nbproject/private/
 **/nbproject/Makefile-*.mk
@@ -174,4 +186,22 @@ nbdist/
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/eclipse,netbeans,intellij,visualstudiocode
+### Gradle ###
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+# End of https://www.gitignore.io/api/maven,gradle,eclipse,netbeans,intellij,visualstudiocode
